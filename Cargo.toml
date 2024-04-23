@@ -1,0 +1,19 @@
+[package]
+name = "thistle"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace]
+members = [
+    "libs/*",
+]
+[dependencies]
+git = {path = "libs/git", version = "0.1.0"}
+aur = {path = "libs/aur", version = "0.1.0"}
+help = {path = "libs/help", version = "0.1.0"}
+package = {path = "libs/pacman", version = "0.1.0"}
+num_cpus = "1.14.0"
