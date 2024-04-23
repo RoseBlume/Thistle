@@ -19,9 +19,9 @@ fn main() {
     let args: Vec<String> = env::args().collect();
 
     // Iterate over command-line arguments
-    for (i, arg) in args.iter().enumerate() {
-        println!("Argument {}: {}", i, arg);
-    }
+    //for (i, arg) in args.iter().enumerate() {
+      //  println!("Argument {}: {}", i, arg);
+    //}
     // Access specific arguments by index
     //let first_arg = &args[1];
     //let second_arg = &args[2];
